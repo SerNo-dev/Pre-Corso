@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    display: flex;
+    margin:0;
+    height : 100vh; /* 100 vh é tutta l'altezza disponibile */
+    font-family: 'Roboto', sans-serif;
+}
+#main {
+    width: 100%; /* é la percentuale dell'elemento padre */
+}
+#content {
+   padding: 8px;
+    display: flex;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   
+    
+
+   
+}
+#sidebar{
+    display: flex;
+    flex-direction: column; /*visto che é column non si può usare justify content,ma align items */
+    align-items: center; /* in questo caso l'asse orizzontale é la cross axis */
+}
+.sidebar-icon {
+    padding: 2.5em;
+    display: flex; 
+    flex-direction: column;
+    align-items: center; /* centra orizzontalmente con align items perché in column,allinea la label rispetto all'icon*/
+    cursor:pointer;
+}
+.sidebar-icon p {
+    margin:0;
+
+}
+.sidebar-icon ion-icon {
+    font-size: 1.5em;
+}
+#topbar {
+    height: 8vh; /* vuol dire l'8 percento di tutto lo spazio verticale che abbiamo a disposizione*/
+    display: flex;
+    justify-content: space-between;/* spingera gli elementi della topbar a destra e sinistra*/
+    align-items: center; /* cosi abbiamo un allineamento verticale*/
+}
+#logo {
+    height: 60%; /* la sua altezza é il 60 percento dell'altezza del suo padre contenitore(topbar = 8vh) */
+}
+#search-wrapper {
+    display: flex;
+ height: 50%; /* 50 percento del parent*/
+}
+#topbar-icons {
+    display: flex; /* le icone cosi si dispongono orizzontalmente */
+}
+.topbar-icon ion-icon {
+    font-size: 2em;
+    padding: 0  0.3em; /* padding 0 in altezza*/
+}
+#mic-icon {
+    margin: 0 0.5em;
+}
+#mic-icon ion-icon {
+    font-size: 1.7em;
+}
+#search-btn {
+    padding:0 0.6em;   /* padding verticale e orizzontale*/
+    font-size: 1.3em;
+    display: flex;
+    align-items: center; /* cosi si centra la lente d'ingrandimento */
+}
+
+ #video {
+    height: 30vh;
+    width: 45vh;
+    
+
+ }
+.box {
+    display: flex;
+    flex-direction: column;
+}
+#bar {
+    display: flex;
+    align-items: center;
+    margin-top: -2px;
+    margin-bottom: 35px;
+    
+    
+}
+#bar img {
+    height: 6vh;
+    
+    }
+#text{
+    display: flex;
+   flex-direction: column;
+   margin-left: 1vh;
+   font-size: 0.8em;
+   
+
+    
+     
+    }
+#desc{
+    margin-top: -15px;
+    color: grey;
+}
